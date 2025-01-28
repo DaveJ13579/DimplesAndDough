@@ -1,0 +1,10 @@
+
+/* Image Carousel for Product Focus */
+
+/*Slideshow container */
+
+.slideshow {
+	max-height: 1000px;
+	position: relative;
+	margin: auto;
+}
