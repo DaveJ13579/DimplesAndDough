@@ -1,0 +1,91 @@
+/* 
+   GLOBAL STYLES (ALL PAGES)
+*/
+
+/* Base Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+}
+
+/* Links */
+a {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid #ff69b4;
+    cursor: pointer;
+    background: transparent;
+    color: black;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff69b4;
+    color: white;
+}
+
+/* Inputs */
+input, textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid #ff69b4;
+    width: 100%;
+}
+
+/* Dividers */
+.divider {
+    width: 80%;
+    margin: 40px auto;
+    border: 2px solid #ff69b4;
+}
+
+/* Page Structure */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Borders */
+.border-box {
+    border: 2px solid #ff69b4;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
