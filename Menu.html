@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimples & Dough | Menu</title>
+
+    <!-- Global and Page-Specific CSS -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+    <!-- Header (Dynamically Loaded) -->
+    <div id="header"></div>
+
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro">
+            <div>
+                <h2>Welcome to Dimples & Dough</h2>
+                <p>Placeholder text for a short welcome message and business description.</p>
+            </div>
+            <img src="PinkBox.png" alt="Welcome Image" class="intro-image">
+        </section>
+
+        <hr class="divider">
+
+        <!-- Staples Section -->
+        <section id="staples">
+            <h2>Our Staples</h2>
+            <p>Placeholder description for staple products.</p>
+        </section>
+
+        <!-- Seasonal Specials Section -->
+        <section id="seasonal">
+            <h2>Seasonal Specials</h2>
+            <p>Placeholder description for seasonal products.</p>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <img src="Placeholder-Baking.jpg" alt="Cookie Batter" class="contact-image">
+            <div class="contact-form">
+                <h2>Got a Craving?</h2>
+                <p>Whether you have a vision or need ideas, I’m here to help—let’s create something delicious.</p>
+                <form id="contact-form">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <div contenteditable="true" id="message" placeholder="Enter your message"></div>
+                    <button type="submit">SEND</button>
+                    <p id="form-message" class="hidden">Thank you! Your message has been submitted.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <hr class="divider">
+
+    <!-- Carousel (Dynamically Loaded) -->
+    <div id="carousel"></div>
+
+    <!-- Footer (Dynamically Loaded) -->
+    <div id="footer"></div>
+
+    <!-- JavaScript for dynamic loading and interactivity -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
