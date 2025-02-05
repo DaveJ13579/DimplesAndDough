@@ -1,1 +1,68 @@
+/* Header Container */
+.site-header {
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #ff69b4;
+}
 
+/* Social Media Banner */
+.social-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.social-banner img {
+    width: 30px;
+    height: auto;
+}
+
+/* Logo */
+.logo-container {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* Navigation Hover Effect */
+.navbar a:hover {
+    background-color: #ff69b4;
+    color: white;
+}
+
+/* Divider Below Navbar */
+.navline {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #ff69b4;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+}
