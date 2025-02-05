@@ -1,59 +1,49 @@
-/* Header Bar (Pink Background) */ 
-header {
-    background: #ffb2d9; /* Pink header */
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: 10px 15px; /* Adds padding for better spacing */
+/* Header Top (Pink Banner with Message & Socials) */
+.header-top {
+    background: #ffb2d9; /* Pink Banner */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
     font-family: "Montserrat", sans-serif;
+    color: white;
 }
 
-/* Header Text */
-.header-text {
+/* Header Message */
+.header-message {
     font-size: 14px;
     font-weight: bold;
-    margin: 0 auto; /* Centers text */
 }
 
 /* Social Icons */
 .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 
 .social-icons img {
-    height: 24px; /* Adjust size */
+    height: 24px; /* Adjusted for consistency */
     width: auto;
 }
 
-.socials:hover {
-    background-color: antiquewhite;
-    padding: 5px;
-}
-
-/* Logo Section (Centers Logo Properly) */
+/* Logo Section */
 .logo-container {
-    display: flex;
-    justify-content: center; /* Centers the logo */
-    width: 100%;
+    text-align: center;
     padding: 10px 0;
 }
 
 .logo {
-    max-width: 150px; /* Ensures logo isn't too big */
-    max-height: 100px;
+    max-width: 200px;
+    max-height: 150px;
     width: auto;
     height: auto;
 }
 
-/* Responsive Logo Sizing for Smaller Screens */
+/* Responsive Logo Sizing */
 @media (max-width: 768px) {
     .logo {
-        max-width: 120px;
-        max-height: 80px;
+        max-width: 150px;
+        max-height: 100px;
     }
 }
 
@@ -77,9 +67,4 @@ header {
     background-color: white;
     color: #ff69b4;
     padding: 5px;
-}
-
-/* Remove Extra Lines */
-hr {
-    display: none;
 }
