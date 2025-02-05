@@ -1,34 +1,33 @@
-.site-footer {
-    background-color: #ffb2d9; /* Matches header color */
+.footer {
+    background-color: #ffb2d9;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding: 20px 40px;
 }
 
-/* Footer Logo */
-.footer-logo img {
+.footer img {
     height: 200px;
     width: 200px;
 }
 
-/* Footer Links */
+#instagram, #facebook {
+    width: 40px;
+    height: auto;
+}
+
 .footer-links {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/* Footer Section Titles */
-.footer-links .menu,
-.footer-links .social-media,
-.footer-links .contact {
-    font-size: 20px;
+.footer-links a {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
     text-decoration: none;
-    margin-bottom: 5px;
 }
 
-/* Footer Menu Items */
 .menuitem {
     color: black;
 }
@@ -38,7 +37,6 @@
     padding: 5px;
 }
 
-/* Social Media Icons */
 .footer-socials {
     display: flex;
     gap: 15px;
@@ -50,18 +48,16 @@
     height: 50px;
 }
 
-/* Footer Contact */
 .footer-contact p {
+    font-family: "Montserrat", serif;
     font-size: 16px;
     margin: 0;
 }
 
-/* Adds space between Email and Tel */
 .footer-contact p:not(:last-child) {
     margin-bottom: 10px;
 }
 
-/* Copyright */
 .copyright {
     text-align: center;
     font-size: 14px;
