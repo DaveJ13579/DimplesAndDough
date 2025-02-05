@@ -35,18 +35,6 @@ main {
     text-align: center;
 }
 
-#staples h2,
-#seasonal h2 {
-    font-size: 1.8rem;
-    color: #d15f3c;
-}
-
-#staples p,
-#seasonal p {
-    font-size: 1.2rem;
-    color: #333;
-}
-
 /* Contact Section */
 #contact {
     display: flex;
