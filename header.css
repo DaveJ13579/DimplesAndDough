@@ -68,5 +68,12 @@ hr {
     width: 100%;
 }
 
+/* Header Logo (Make Larger) */
+.logo {
+    max-width: 250px; /* Increased from 150px */
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
 
 
