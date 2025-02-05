@@ -20,13 +20,6 @@ main {
     max-width: 100%;
 }
 
-/* Divider */
-.divider {
-    width: 80%;
-    margin: 40px auto;
-    border: 1px solid #ccc;
-}
-
 /* Staples & Seasonal Sections */
 #staples,
 #seasonal {
@@ -108,10 +101,4 @@ main {
 /* Form Message */
 .hidden {
     display: none;
-}
-
-/* Carousel */
-#carousel {
-    margin: 40px auto;
-    max-width: 900px;
 }
