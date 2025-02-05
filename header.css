@@ -1,34 +1,62 @@
 /* Header Bar (Pink Background) */
 header {
     background: #ffb2d9; /* Pink header */
+    color: White;
     width: 100%;
     text-align: center;
     padding: 10px 15px; /* Adds padding for better spacing */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Header Text */
 .header-text {
     font-size: 14px;
     font-weight: bold;
-    color: white;
     margin: 0 auto; /* Centers text */
 }
 
 /* Social Icons */
 .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
-.socials {
-    height: 30px; /* Adjust size */
+.social-icons img {
+    height: 24px; /* Adjust size */
     width: auto;
 }
 
 .socials:hover {
     background-color: antiquewhite;
     padding: 5px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ffb2d9;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #ff69b4;
+    padding: 5px;
+}
+
+/* Remove Extra Lines */
+hr {
+    display: none;
 }
