@@ -1,347 +1,66 @@
-body {
-	font-family: "Montserrat", sans-serif;
-	color: black;
-	font-size: 20px;
-}
+/* Home Page-Specific Styles */
 
-/* Header / Footer CSS*/
-
-/*Header*/
-
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-/* Header styles */
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.social-banner {
-    background-color: #ffb2d9;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 20px;
-}
-
-.social-banner img {
-    height: 50px; /* Increased size of social media icons */
-}
-
-/* New text added to center in the banner */
-.banner-text {
-    font-size: 32px; /* Large font size */
-    font-weight: bold;
-    color: black; /* Black text color */
-    text-align: center; /* Center the text */
-    flex-grow: 1; /* Ensures the text stays centered */
-}
-
-.logo-container {
-    background-color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.logo-container img {
-    height: 600px; /* Increased logo size */
-}
-
-.nav-links {
-    background-color: #ffb2d9;
-    display: flex;
-    justify-content: space-around; /* Spread out the links evenly */
-    width: 100%; /* Ensures it spans across the whole page */
-    padding: 10px 0;
-}
-
-.nav-links a {
-    font-weight: bold;  /* Makes the text bold */
-    font-size: 20px;    /* Increases font size */
-    padding: 0 20px;    /* Adds some spacing between links */
-}
-
-  /* Footer */
-
-.footer {
-  background-color: #ffb2d9; /* Same banner color */
-  display: flex;
-  align-items: flex-start;  /* Align items to the start */
-  justify-content: space-between; /* Space out elements */
-  padding: 20px 40px;    /* Space around footer */
-}
-
-.footer img {
-  height: 150px; /* Increased logo size in footer */
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column; /* Stack the links vertically */
-  gap: 10px; /* Adds space between the links */
-}
-
-.footer-links a {
-  font-weight: normal;  /* Removes bold */
-  font-size: 16px;    /* Set a font size for the footer links */
-  text-decoration: none; /* Removes the underline */
-}
-
-.footer-links .menu-link {
-  font-weight: bold;  /* Makes the Menu link bold */
-  text-decoration: underline; /* Underlines the Menu link */
-}
-
-.footer-links .social-media {
-  font-weight: bold;  /* Makes Social Media bold */
-  text-decoration: underline; /* Underlines Social Media */
-}
-
-.footer-links .contact {
-  font-weight: bold;  /* Makes Contact bold */
-  text-decoration: underline; /* Underlines Contact */
-  margin-bottom: 5px; /* Reduced space before Contact section */
-}
-
-.footer-socials {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.footer-socials img {
-  height: 50px; /* Social media logos size */
-}
-
-.footer-contact p {
-  font-size: 16px;
-  margin: 0; /* Remove the margin to reduce the gap */
-}
-
-/* Adds space between Email and Tel */
-.footer-contact p:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-/* Copyright styles */
-.copyright {
-  text-align: center;
-  font-size: 14px; /* Larger font for readability */
-  font-weight: bold; /* Bold text */
-  margin-top: 20px;  /* Adds space from the footer */
-  color: black; /* Ensures the copyright text is black */
-}
-
-
-/*Top Image*/
-
+/* Top Image */
 .TopImage {
-	position: relative;
-	border-bottom: 4px solid #ffb2d9;
-	border-top: 4px solid #ffb2d9;
+    position: relative;
+    border-bottom: 4px solid #ffb2d9;
+    border-top: 4px solid #ffb2d9;
 }
+
 .TopImage img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
+    display: block;
+    margin: 20px auto;
 }
 
 .motto {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: #fcf5e5;
-	font-size: 30px;
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fcf5e5;
+    font-size: 30px;
 }
-/*Welcome Section*/
 
-body {
-      font-family: "Montserrat", serif;
-    }
-
+/* Welcome Section */
 .mainContainer {
-  margin-top: 200px;
-  display: flex;
-  
+    margin-top: 200px;
+    display: flex;
 }
 
 .cellOne {
-  flex: 50%;  
-  margin: 30px;
-  padding: 40px;
-  font-family: "Montserrat", serif; 
-  background-color: #ffb2d9;
-  max-width: 50%; 
-  border-radius: 15px;  
+    flex: 50%;
+    margin: 30px;
+    padding: 40px;
+    background-color: #ffb2d9;
+    max-width: 50%;
+    border-radius: 15px;
 }
 
-.cellOne > h2 {
-  
-  text-align: center;
-  font-size: 50px;
+.cellOne h2 {
+    text-align: center;
+    font-size: 50px;
 }
 
-.cellOne  p {
-  font-size: 30px;
-
+.cellOne p {
+    font-size: 30px;
 }
 
 .cellTwo {
-  max-height: 1000px;
-  margin: 20px 200px 20px 200px;
-  border-radius: 15px;
+    max-height: 1000px;
+    margin: 20px 200px;
+    border-radius: 15px;
 }
 
-	
-
-
-/* Image Carousel for Product Focus */
+/* Product Focus Section */
 .ProductFocus {
-  margin-top: 200px;
-}
-.ProductFocus h3 {text-align: center;}
-
-/*Slideshow container */
-
-#Carousel {
-    background-color: white;
-    height: 550px;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 500px 0px;
-    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
-    align-items: center;
-    justify-items: center;
-    
+    margin-top: 200px;
 }
 
-.item img {
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-    margin-top: 0px;
-}
-
-.name {
-    margin-bottom: 2px;
-    color: black;
-}
-
-.caption {
-    font-style: italic;
-    margin-top: 2px;
-    color: #fcf5e5;
-}
-
-main#carouselSlides {
-
-    grid-row: 1 / 2;
-    grid-column: 1 / 8;
-    width: 100vw;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transform-style: preserve-3d;
-    perspective: 100%;
-    --items: 5;
-    --middle: 3;
-    --position: 1;
-    pointer-events: none;
-}
-
-div.item {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.0);
+.ProductFocus h3 {
     text-align: center;
-    padding: 20px;
-    /*border: 2px solid black;*/
-    border-radius: 10px;
-    background-color: #fff;
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    background-color: #ffb2d9;
-    --r: calc(var(--position) - var(--offset));
-    --abs: max(calc(var(--r) * -1), var(--r));
-    transition: all 0.25s linear;
-    transform: rotateY(calc(-10deg * var(--r)))
-    translateX(calc(-300px * var(--r)));
-    z-index: calc((var(--position) - var(--abs)));
-}
-input[type="radio"]{
-    accent-color: #ffb2d9;
 }
 
-div.item:nth-of-type(1) {
-    --offset: 1;
-}
-div.item:nth-of-type(2) {
-    --offset: 2;
-}
-div.item:nth-of-type(3) {
-    --offset: 3;
-}
-div.item:nth-of-type(4) {
-    --offset: 4;
-}
-div.item:nth-of-type(5) {
-    --offset: 5;
-}
-
-input:nth-of-type(1) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-input:nth-of-type(1):checked ~ main#carouselSlides {
-    --position: 1;
-}
-
-input:nth-of-type(2) {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(2):checked ~ main#carouselSlides {
-    --position: 2;
-}
-
-input:nth-of-type(3) {
-    grid-column: 4 /5;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(3):checked ~ main#carouselSlides {
-    --position: 3;
-}
-
-input:nth-of-type(4) {
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(4):checked ~ main#carouselSlides {
-    --position: 4;
-}
-
-input:nth-of-type(5) {
-    grid-column: 6 / 7;
-    grid-row: 2 / 3;
-}
-input:nth-of-type(5):checked ~ main#carouselSlides {
-    --position: 5;
-}
-
-/*Engage&Order Section*/
-
+/* Engage & Order Section */
 .EngageOrder {
-	text-align: center;
+    text-align: center;
 }
