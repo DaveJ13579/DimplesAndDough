@@ -13,11 +13,8 @@
 
 <body>
 
-    <!-- Header -->
-    <div id="header">
-        <!-- Include header.html here -->
-        <link rel="stylesheet" href="header.css">
-    </div>
+    <!-- Header (Dynamically Loaded) -->
+    <div id="header"></div>
 
     <main>
         <!-- Insert your code below -->
@@ -25,17 +22,28 @@
 
     <hr class="divider">
 
-    <!-- Carousel -->
-    <div id="carousel">
-        <!-- Include carousel.html here -->
-        <link rel="stylesheet" href="carousel.css">
-    </div>
+    <!-- Carousel (Dynamically Loaded) -->
+    <div id="carousel"></div>
 
-    <!-- Footer -->
-    <div id="footer">
-        <!-- Include footer.html here -->
-        <link rel="stylesheet" href="footer.css">
-    </div>
+    <!-- Footer (Dynamically Loaded) -->
+    <div id="footer"></div>
+
+    <!-- JavaScript to Load Header, Footer, and Carousel -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("header").innerHTML = data);
+
+            fetch("carousel.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("carousel").innerHTML = data);
+
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("footer").innerHTML = data);
+        });
+    </script>
 
 </body>
 
