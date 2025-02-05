@@ -28,22 +28,8 @@
     <!-- Footer (Dynamically Loaded) -->
     <div id="footer"></div>
 
-    <!-- JavaScript to Load Header, Footer, and Carousel -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            fetch("header.html")
-                .then(response => response.text())
-                .then(data => document.getElementById("header").innerHTML = data);
-
-            fetch("carousel.html")
-                .then(response => response.text())
-                .then(data => document.getElementById("carousel").innerHTML = data);
-
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(data => document.getElementById("footer").innerHTML = data);
-        });
-    </script>
+    <!-- Load JavaScript -->
+    <script src="scripts.js"></script>
 
 </body>
 
