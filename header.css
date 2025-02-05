@@ -62,18 +62,20 @@ hr {
     display: none;
 }
 
-/* Logo Container */
+/* Logo Container - Ensures Proper Centering */
 .logo-container {
     display: flex;
     justify-content: center; /* Centers the logo */
+    align-items: center;
     width: 100%;
-    padding: 10px 0; /* Adds some spacing */
+    padding: 10px 0;
 }
 
-/* Header Logo (Make Smaller) */
+/* Header Logo - Restrict Size */
 .logo {
-    max-width: 150px; /* Reduced size */
+    max-width: 150px; /* Set a reasonable max size */
     max-height: 100px;
     width: auto;
     height: auto;
 }
+
