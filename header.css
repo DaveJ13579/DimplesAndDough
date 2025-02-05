@@ -1,14 +1,15 @@
 /* Header Bar (Pink Background) */
 header {
     background: #ffb2d9; /* Pink header */
-    color: White;
+    color: white;
     width: 100%;
     text-align: center;
-    padding: 10px 15px; /* Adds padding for better spacing */
+    padding: 5px 15px; /* Reduced padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Montserrat", sans-serif;
+    position: relative;
 }
 
 /* Header Text */
@@ -21,33 +22,33 @@ header {
 /* Social Icons */
 .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 10px;
+    position: absolute;
+    right: 15px;
+    top: 5px; /* Moves icons slightly higher */
 }
 
+/* Social Media Icons - Adjust Sizing */
 .social-icons img {
-    height: 24px; /* Adjust size */
+    height: 20px; /* Adjusted size */
     width: auto;
-}
-
-.socials:hover {
-    background-color: antiquewhite;
-    padding: 5px;
 }
 
 /* Navigation Bar */
 .navbar {
     background-color: #ffb2d9;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0; /* Reduced padding */
 }
 
+/* Navigation Links */
 .navbar a {
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-size: 16px; /* Slightly smaller */
     text-transform: uppercase;
     text-decoration: none;
     color: black;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .navbar a:hover {
@@ -61,19 +62,18 @@ hr {
     display: none;
 }
 
-/* Logo */
+/* Logo Container */
 .logo-container {
     display: flex;
     justify-content: center; /* Centers the logo */
     width: 100%;
+    padding: 10px 0; /* Adds some spacing */
 }
 
-/* Header Logo (Make Larger) */
+/* Header Logo (Make Smaller) */
 .logo {
-    max-width: 250px; /* Increased from 150px */
-    max-height: 200px;
+    max-width: 150px; /* Reduced size */
+    max-height: 100px;
     width: auto;
     height: auto;
 }
-
-
