@@ -1,32 +1,29 @@
-/* Header Top (Pink Banner with Message & Social Icons) */
-.header-top {
-    background: #ffb2d9; /* Pink background */
-    display: flex;
-    justify-content: space-between; /* Space out text and icons */
-    align-items: center;
-    padding: 10px 20px;
-    font-family: "Montserrat", sans-serif;
-    color: white;
+/* Ensure Header is Full Width */
+#header {
     width: 100%;
-}
-
-/* Header Message (Centered in Bar) */
-.header-message {
-    font-size: 14px;
-    font-weight: bold;
-    flex-grow: 1; /* Expands to take available space */
-    text-align: center; /* Ensures it stays centered */
-}
-
-/* Social Icons (Aligned to the Right) */
-.social-icons {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
 }
 
-/* Social Icons (Ensure They Are Properly Sized) */
-.social-icons img {
-    height: 24px; /* Keeps icons small */
-    width: auto;
+/* Fix Navbar Layout */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #ffb2d9;
+    padding: 10px 0;
+}
+
+.navbar a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #ff69b4;
+    padding: 5px;
 }
