@@ -9,7 +9,7 @@ body {
     padding: 0;
 }
 
-/* Links */
+/* Global Links */
 
 a {
     text-decoration: none;
@@ -22,7 +22,7 @@ a:hover {
     color: #ff69b4;
 }
 
-/* Buttons */
+/* Global Buttons */
 
 button {
     font-size: 1rem;
@@ -39,9 +39,9 @@ button:hover {
     color: white;
 }
 
-/* Dividers */
+/* Global Dividers */
 
-.navline, .divider {
+.divider {
     width: 80%;
     margin: 10px auto;
     border: 1px solid #ff69b4;
@@ -61,43 +61,7 @@ h1, h2, h3 {
     color: black;
 }
 
-/* Navigation */
-
-.navbar {
-    text-align: center;
-}
-
-.navbar a {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    margin-right: 25px;
-}
-
-.navbar a:hover {
-    background-color: #ffb2d9;
-    color: white;
-    padding: 5px;
-}
-
-/* Footer */
-
-.footer-links a {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-.copyright {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 20px;
-    color: black;
-}
-
-/* Social Media Icons */
+/* Global Social Media Icons */
 
 .socials {
     margin-top: 5px;
