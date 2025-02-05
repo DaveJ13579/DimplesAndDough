@@ -1,68 +1,48 @@
-/* Header Container */
-.site-header {
-    width: 100%;
-    background-color: white;
-    padding: 10px 0;
-    text-align: center;
-    border-bottom: 2px solid #ff69b4;
+header {
+    height: 55px;
+    background: #ffb2d9;
 }
 
-/* Social Media Banner */
-.social-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.socials {
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
+    height: 40px;
+    width: 40px;
+}
+
+.socials:hover {
+    background-color: antiquewhite;
     padding: 5px;
 }
 
-.social-banner img {
-    width: 30px;
-    height: auto;
-}
-
-/* Logo */
-.logo-container {
-    text-align: center;
-    padding: 10px 0;
-}
-
 .logo {
-    width: 150px;
-    height: auto;
+    display: block;
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
 }
 
-/* Navigation */
 .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
+    text-align: center;
 }
 
 .navbar a {
-    font-size: 1.2rem;
-    padding: 5px 15px;
-    border-radius: 5px;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-right: 25px;
 }
 
-/* Navigation Hover Effect */
-.navbar a:hover {
-    background-color: #ff69b4;
+#hover:hover {
+    background-color: #ffb2d9;
     color: white;
+    padding: 5px;
 }
 
-/* Divider Below Navbar */
 .navline {
-    width: 80%;
-    margin: 10px auto;
-    border: 1px solid #ff69b4;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
+    border: 2px solid;
+    color: #ffb2d9;
 }
