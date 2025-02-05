@@ -60,3 +60,22 @@ header {
 hr {
     display: none;
 }
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px; /* Default logo size */
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
+/* Responsive Logo Sizing for Smaller Screens */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 150px;
+        max-height: 100px;
+    }
+}
+
