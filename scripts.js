@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(data => document.getElementById("carousel").innerHTML = data);
     }
 
-    // Menu page interactivity (if needed)
+    // Menu page interactivity (if needed) 
     if (document.body.classList.contains("menu-page")) {
         // Add menu-specific scripts here (if needed)
     }
