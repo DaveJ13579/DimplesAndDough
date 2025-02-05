@@ -76,14 +76,14 @@ main {
 
 .contact-form button {
     background: transparent;
-    border: 2px solid pink;
+    border: 2px ff69b4;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .contact-form button:hover {
-    background: pink;
+    background: ff69b4;
     color: white;
 }
 
