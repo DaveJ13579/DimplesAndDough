@@ -1,75 +1,69 @@
-/* Header Banner (Pink Announcement Bar) */
-.header-banner {
-    background: #ffb2d9;
-    color: white;
-    text-align: center;
-    padding: 8px 0;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-}
-
-/* Header Section */
+/* Header Bar (Pink Background) */
 header {
-    background: #ffb2d9;
+    background: #ffb2d9; /* Pink header */
+    color: White;
     width: 100%;
     text-align: center;
-    padding: 10px 15px;
+    padding: 10px 15px; /* Adds padding for better spacing */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     font-family: "Montserrat", sans-serif;
 }
 
-/* Social Media Icons */
+/* Header Text */
+.header-text {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto; /* Centers text */
+}
+
+/* Social Icons */
 .social-icons {
     display: flex;
-    gap: 10px;
-    position: absolute;
-    right: 15px;
-    top: 10px;
+    gap: 15px;
 }
 
 .social-icons img {
-    height: 24px;
+    height: 24px; /* Adjust size */
     width: auto;
 }
 
-/* Logo Container */
-.logo-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 10px 0;
-}
-
-/* Header Logo (Corrected Sizing) */
-.logo {
-    max-width: 180px;
-    max-height: 140px;
-    width: auto;
-    height: auto;
+.socials:hover {
+    background-color: antiquewhite;
+    padding: 5px;
 }
 
 /* Navigation Bar */
 .navbar {
     background-color: #ffb2d9;
     text-align: center;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 .navbar a {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
     color: black;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .navbar a:hover {
     background-color: white;
     color: #ff69b4;
     padding: 5px;
+}
+
+/* Remove Extra Lines */
+hr {
+    display: none;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centers the logo */
+    width: 100%;
 }
