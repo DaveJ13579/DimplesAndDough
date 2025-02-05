@@ -1,7 +1,7 @@
 /* Header Bar (Pink Background) */
 header {
     background: #ffb2d9; /* Pink header */
-    color: White;
+    color: white;
     width: 100%;
     text-align: center;
     padding: 10px 15px; /* Adds padding for better spacing */
@@ -34,6 +34,29 @@ header {
     padding: 5px;
 }
 
+/* Logo Section (Centers Logo Properly) */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centers the logo */
+    width: 100%;
+    padding: 10px 0;
+}
+
+.logo {
+    max-width: 150px; /* Ensures logo isn't too big */
+    max-height: 100px;
+    width: auto;
+    height: auto;
+}
+
+/* Responsive Logo Sizing for Smaller Screens */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 120px;
+        max-height: 80px;
+    }
+}
+
 /* Navigation Bar */
 .navbar {
     background-color: #ffb2d9;
@@ -59,11 +82,4 @@ header {
 /* Remove Extra Lines */
 hr {
     display: none;
-}
-
-/* Logo */
-.logo-container {
-    display: flex;
-    justify-content: center; /* Centers the logo */
-    width: 100%;
 }
