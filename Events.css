@@ -1,1 +1,162 @@
+head, body {
+    background-color: #ffffff;
+}
+
+header {
+    height: 55px;
+    background: #ffb2d9;  
+}
+
+
+
+.socials {
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
+    height: 40px;
+    width: 40px;
+}
+
+.socials:hover {
+    background-color: antiquewhite;
+    padding: 5px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar a {
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;
+    margin-right: 25px;
+}
+
+#hover:hover {
+    background-color: #ffb2d9;
+    color: white;
+    padding: 5px;
+}
+
+.navline {
+    border: 2px solid;
+    color: #ffb2d9;
+}
+
+.current, .upcoming, .past {
+    font-family: "Montserrat", serif;
+    text-align: center;
+    font-weight: normal;
+    text-decoration: underline #ffb2d9;
+}
+
+/* Chris footer */
+.footer {
+    background-color: #ffb2d9; /* Same banner color */
+    display: flex;
+    align-items: flex-start;  /* Align items to the start */
+    justify-content: space-between; /* Space out elements */
+    padding: 20px 40px;    /* Space around footer */
+  }
+  
+.footer img {
+    height: 200px;
+    width: 200px;
+}
+
+#instagram {
+    width: 40px;
+    height: auto;
+}
+  
+#facebook {
+    width: 40px;
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column; /* Stack the links vertically */
+    gap: 10px; /* Adds space between the links */
+}
+  
+.footer-links a {
+    font-family: "Montserrat", serif;
+    font-weight: normal;  /* Removes bold */
+    font-size: 16px;    /* Set a font size for the footer links */
+    text-decoration: none; /* Removes the underline */
+}
+  
+.footer-links .menu {
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.menuitem {
+    color:black;
+}
+
+.menuitem:hover {
+    background-color: antiquewhite;
+    padding: 5px;
+}
+  
+.footer-links .social-media {
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+  
+.footer-links .contact {
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    text-decoration: none; 
+    margin-bottom: 5px;
+}
+  
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.footer-socials img {
+    height: 50px; /* Social media logos size */
+}
+  
+.footer-contact p {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    margin: 0; /* Remove the margin to reduce the gap */
+}
+  
+  /* Adds space between Email and Tel */
+.footer-contact p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  /* Copyright styles */
+.copyright {
+    font-family: "Montserrat", serif;
+    text-align: center;
+    font-size: 14px; /* Larger font for readability */
+    margin-top: 20px;  /* Adds space from the footer */
+    color: black; /* Ensures the copyright text is black */
+}
+  
+  
 
