@@ -1,66 +1,80 @@
-/* Home Page-Specific Styles */
-
-/* Top Image */
-.TopImage {
-    position: relative;
-    border-bottom: 4px solid #ffb2d9;
-    border-top: 4px solid #ffb2d9;
+/* Header Banner (Pink Announcement Bar) */
+.header-banner {
+    background: #ffb2d9;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
 }
 
-.TopImage img {
-    display: block;
-    margin: 20px auto;
+/* Header Section */
+header {
+    background: #ffb2d9;
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
 }
 
-.motto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fcf5e5;
-    font-size: 30px;
-}
-
-/* Welcome Section */
-.mainContainer {
-    margin-top: 200px;
+/* Header Content (Logo & Social Media) */
+.header-content {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
 }
 
-.cellOne {
-    flex: 50%;
-    margin: 30px;
-    padding: 40px;
+/* Social Media Icons */
+.social-icons {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    height: 24px;
+    width: auto;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Header Logo - Restrict Size */
+.logo {
+    max-width: 160px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+}
+
+/* Navigation Bar */
+.navbar {
     background-color: #ffb2d9;
-    max-width: 50%;
-    border-radius: 15px;
-}
-
-.cellOne h2 {
     text-align: center;
-    font-size: 50px;
+    padding: 8px 0;
 }
 
-.cellOne p {
-    font-size: 30px;
+.navbar a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
 }
 
-.cellTwo {
-    max-height: 1000px;
-    margin: 20px 200px;
-    border-radius: 15px;
-}
-
-/* Product Focus Section */
-.ProductFocus {
-    margin-top: 200px;
-}
-
-.ProductFocus h3 {
-    text-align: center;
-}
-
-/* Engage & Order Section */
-.EngageOrder {
-    text-align: center;
+.navbar a:hover {
+    background-color: white;
+    color: #ff69b4;
+    padding: 5px;
 }
