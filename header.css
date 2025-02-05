@@ -1,58 +1,34 @@
-
-/* Header Section */
+/* Header Bar (Pink Background) */
 header {
-    height: 80px; 
-    background: #ffb2d9;
+    background: #ffb2d9; /* Pink header */
+    width: 100%;
+    text-align: center;
+    padding: 10px 15px; /* Adds padding for better spacing */
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
-/* Social Media Icons */
+/* Header Text */
+.header-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto; /* Centers text */
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
 .socials {
-    margin-top: 5px;
-    margin-right: 5px;
-    float: right;
-    height: 40px;
-    width: 40px;
+    height: 30px; /* Adjust size */
+    width: auto;
 }
 
 .socials:hover {
     background-color: antiquewhite;
     padding: 5px;
-}
-
-/* Logo */
-.logo {
-    display: block;
-    margin: 0 auto;
-    height: 200px; /* Adjusted for better sizing */
-    width: auto;
-}
-
-/* Navigation Bar */
-.navbar {
-    text-align: center;
-    background-color: #ffb2d9; /* Same pink as the header */
-    padding: 10px 0;
-}
-
-.navbar a {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    margin-right: 25px;
-}
-
-.navbar a:hover {
-    background-color: white;
-    color: #ff69b4;
-    padding: 5px;
-}
-
-/* Navbar Divider */
-.navline {
-    border: 2px solid #ffb2d9;
 }
