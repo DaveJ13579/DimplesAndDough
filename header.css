@@ -1,70 +1,32 @@
-/* Header Top (Pink Banner with Message & Socials) */
+/* Header Top (Pink Banner with Message & Social Icons) */
 .header-top {
-    background: #ffb2d9; /* Pink Banner */
+    background: #ffb2d9; /* Pink background */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space out text and icons */
     align-items: center;
     padding: 10px 20px;
     font-family: "Montserrat", sans-serif;
     color: white;
+    width: 100%;
 }
 
-/* Header Message */
+/* Header Message (Centered in Bar) */
 .header-message {
     font-size: 14px;
     font-weight: bold;
+    flex-grow: 1; /* Expands to take available space */
+    text-align: center; /* Ensures it stays centered */
 }
 
-/* Social Icons */
+/* Social Icons (Aligned to the Right) */
 .social-icons {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
+/* Social Icons (Ensure They Are Properly Sized) */
 .social-icons img {
-    height: 24px; /* Adjusted for consistency */
+    height: 24px; /* Keeps icons small */
     width: auto;
-}
-
-/* Logo Section */
-.logo-container {
-    text-align: center;
-    padding: 10px 0;
-}
-
-.logo {
-    max-width: 200px;
-    max-height: 150px;
-    width: auto;
-    height: auto;
-}
-
-/* Responsive Logo Sizing */
-@media (max-width: 768px) {
-    .logo {
-        max-width: 150px;
-        max-height: 100px;
-    }
-}
-
-/* Navigation Bar */
-.navbar {
-    background-color: #ffb2d9;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.navbar a {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    margin: 0 15px;
-}
-
-.navbar a:hover {
-    background-color: white;
-    color: #ff69b4;
-    padding: 5px;
 }
