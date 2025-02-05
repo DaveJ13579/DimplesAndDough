@@ -1,50 +1,67 @@
-/* Header Bar (Pink Background) */
-header {
-    background: #ffb2d9; /* Pink header */
+/* Header Banner (Pink Announcement Bar) */
+.header-banner {
+    background: #ffb2d9;
     color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Header Section */
+header {
+    background: #ffb2d9;
     width: 100%;
     text-align: center;
-    padding: 5px 15px; /* Reduced padding */
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     font-family: "Montserrat", sans-serif;
-    position: relative;
 }
 
-/* Header Text */
-.header-text {
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0 auto; /* Centers text */
-}
-
-/* Social Icons */
+/* Social Media Icons */
 .social-icons {
     display: flex;
     gap: 10px;
     position: absolute;
     right: 15px;
-    top: 5px; /* Moves icons slightly higher */
+    top: 10px;
 }
 
-/* Social Media Icons - Adjust Sizing */
 .social-icons img {
-    height: 20px; /* Adjusted size */
+    height: 24px;
     width: auto;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Header Logo (Corrected Sizing) */
+.logo {
+    max-width: 180px;
+    max-height: 140px;
+    width: auto;
+    height: auto;
 }
 
 /* Navigation Bar */
 .navbar {
     background-color: #ffb2d9;
     text-align: center;
-    padding: 5px 0; /* Reduced padding */
+    padding: 5px 0;
 }
 
-/* Navigation Links */
 .navbar a {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px; /* Slightly smaller */
+    font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
     color: black;
@@ -56,26 +73,3 @@ header {
     color: #ff69b4;
     padding: 5px;
 }
-
-/* Remove Extra Lines */
-hr {
-    display: none;
-}
-
-/* Logo Container */
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
-}
-
-/* Header Logo - Restore Original Size */
-.logo {
-    max-width: 180px; /* Adjusted back to smaller but visible */
-    max-height: 140px;
-    width: auto;
-    height: auto;
-}
-
