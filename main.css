@@ -1,6 +1,4 @@
-/* 
-   GLOBAL STYLES (ALL PAGES)
-*/
+/* Global for all sites */
 
 /* Base Styles */
 body {
@@ -12,37 +10,26 @@ body {
     padding: 0;
 }
 
-/* Headings */
-h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-}
-
-/* Paragraphs */
-p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: black;
-}
-
-/* Links */
+/* Global Links */
 a {
-    color: #ff69b4;
     text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #ff69b4;
 }
 
-/* Buttons */
+/* Global Buttons */
 button {
     font-size: 1rem;
-    padding: 10px;
+    padding: 10px 15px;
     border: 2px solid #ff69b4;
-    cursor: pointer;
     background: transparent;
     color: black;
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -51,19 +38,11 @@ button:hover {
     color: white;
 }
 
-/* Inputs */
-input, textarea {
-    font-size: 1rem;
-    padding: 10px;
-    border: 2px solid #ff69b4;
-    width: 100%;
-}
-
-/* Dividers */
-.divider {
+/* Global Dividers */
+.navline, .divider {
     width: 80%;
-    margin: 40px auto;
-    border: 2px solid #ff69b4;
+    margin: 10px auto;
+    border: 1px solid #ff69b4;
 }
 
 /* Page Structure */
@@ -72,17 +51,17 @@ main {
     text-align: center;
 }
 
-/* Borders */
-.border-box {
-    border: 2px solid #ff69b4;
-    padding: 10px;
-    margin: 10px;
+/* Global Section Headers */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
 }
 
-/* Responsive Design */
+/* Responsive Layout */
 @media (max-width: 768px) {
-    body {
-        font-size: 14px;
+    .navbar {
+        flex-direction: column;
+        text-align: center;
     }
 
     main {
