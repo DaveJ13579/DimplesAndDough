@@ -1,6 +1,5 @@
-/* Global for all sites */
+/* Global Styles */
 
-/* Base Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -10,7 +9,8 @@ body {
     padding: 0;
 }
 
-/* Global Links */
+/* Links */
+
 a {
     text-decoration: none;
     font-weight: bold;
@@ -22,7 +22,8 @@ a:hover {
     color: #ff69b4;
 }
 
-/* Global Buttons */
+/* Buttons */
+
 button {
     font-size: 1rem;
     padding: 10px 15px;
@@ -38,7 +39,8 @@ button:hover {
     color: white;
 }
 
-/* Global Dividers */
+/* Dividers */
+
 .navline, .divider {
     width: 80%;
     margin: 10px auto;
@@ -46,18 +48,72 @@ button:hover {
 }
 
 /* Page Structure */
+
 main {
     padding: 20px;
     text-align: center;
 }
 
-/* Global Section Headers */
+/* Section Headers */
+
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     color: black;
 }
 
-/* Responsive Layout */
+/* Navigation */
+
+.navbar {
+    text-align: center;
+}
+
+.navbar a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-right: 25px;
+}
+
+.navbar a:hover {
+    background-color: #ffb2d9;
+    color: white;
+    padding: 5px;
+}
+
+/* Footer */
+
+.footer-links a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: black;
+}
+
+/* Social Media Icons */
+
+.socials {
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
+    height: 40px;
+    width: 40px;
+}
+
+.socials:hover {
+    background-color: antiquewhite;
+    padding: 5px;
+}
+
+/* Responsive Design */
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -66,5 +122,10 @@ h1, h2, h3 {
 
     main {
         padding: 15px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
     }
 }
