@@ -62,20 +62,17 @@ hr {
 }
 
 /* Logo */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centers the logo */
+    width: 100%;
+}
+
 .logo {
-    display: block;
-    margin: 0 auto;
-    max-width: 200px; /* Default logo size */
-    max-height: 150px;
+    max-width: 150px; /* Adjust size */
+    max-height: 100px;
     width: auto;
     height: auto;
 }
 
-/* Responsive Logo Sizing for Smaller Screens */
-@media (max-width: 768px) {
-    .logo {
-        max-width: 150px;
-        max-height: 100px;
-    }
-}
 
