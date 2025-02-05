@@ -1,162 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Dimples & Dough</title>
-	<link rel="stylesheet" type="text/css" href="home.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimples & Dough</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="carousel.css">
 </head>
-<body>
 
-	<!-- Header Section -->
+<body class="home-page">
 
-	<header class="header">
-        <div class="social-banner">
-            <!-- Added "Bake The World A Better Place" in the center with quotes -->
-            <div class="banner-text">"Bake The World A Better Place"</div>
-            <a href="https://www.instagram.com/dimplesanddough_wa/" target="_blank">
-                <img src="images/instagramlogo.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/people/Dimples-Dough/61560367472410/" target="_blank">
-                <img src="images/facebooklogo.png" alt="Facebook">
-            </a>
+    <!-- Header (Dynamically Loaded) -->
+    <div id="header"></div>
+
+    <!-- Page Wide Photo -->
+    <section class="TopImage">
+        <img src="images/Valley.jpg" alt="Valley">
+        <div class="motto">Insert Words Here</div>
+    </section>
+
+    <!-- Welcome Message -->
+    <section class="mainContainer">
+        <div class="cellOne">
+            <h2 class="message">Welcome to Dimples and Dough!</h2>
+            <p>
+                Try our delicious home-baked goods from the PNW.
+                At Dimples and Dough, we believe love and happiness 
+                are spread through baking!
+            </p>
         </div>
-        <div class="logo-container">
-            <img src="images/DAndD.png" alt="Dimples & Dough Logo">
+        <div class="cellTwo">
+            <img class="atticusPic" src="images/Atticus.jpeg" alt="Atticus" height="500px">
         </div>
-        <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="menu.html">Menu & Order</a>
-            <a href="events.html">Pop-Ups</a>
-            <a href="#about">About</a>
-        </nav>
-    </header>
-	
+    </section>
 
-	<!-- Page Wide Photo -->
-	<section class="TopImage">
-		<img src="images/Valley.jpg" alt="Valley">
-		<div class="motto">Insert Words Here </div>
-	</section>
-		
+    <!-- Product Focus -->
+    <section class="ProductFocus">
+        <h3>Featured Items</h3>
 
-	<!-- Welcome Message -->
-	<section class="mainContainer">
-		
-		<div class="cellOne">
-			<h2 class="message">Welcome to Dimples and Dough!</h2>
-			<p>
-				Try our deliciious home baked goods from the PNW.
-				At Dimples and Dough, we belive love and happiness 
-				are spread through baking!
-			</p>
-		</div>
+        <!-- Image Carousel (Dynamically Loaded) -->
+        <div id="carousel"></div>
+    </section>
 
-		<div class="cellTwo">
-			<img class="atticusPic" src="images/Atticus.jpeg" alt="Atticus" height= 500px>
-		</div>
-	</section>
+    <!-- Engage & Order -->
+    <section class="EngageOrder">
+        <h3>Place an order today!</h3>
+        <p>
+            Head over to our Menu & Ordering page to see our regular items as well as our seasonal bakes!
+            If you don't find what you were looking for, don't worry. We do custom orders!
+        </p>
+    </section>
 
+    <!-- Footer (Dynamically Loaded) -->
+    <div id="footer"></div>
 
-	<!-- Product Focus -->
-	<section class="ProductFocus">
-		<h3>Featured Items</h3>
-		
-
-		<!--Image carousel with seasonal and best selling products-->
-
-		<section id="Carousel">
-		<!-- Radio Buttons -->
-		<input type="radio" name="position" />
-		<input type="radio" name="position" />
-		<input type="radio" name="position" checked/>
-		<input type="radio" name="position" />
-		<input type="radio" name="position" />
-
-		<main id="carouselSlides">
-			<div class="item">
-				<img src="images/Atticus.jpeg">
-				<h3 class="name">Atticus</h3>
-				<p class="caption">Certified Good Boy</p>
-			</div>
-
-			<div class="item">
-				<img src="images/Gladys.jpeg">
-				<h3 class="name">Gladys</h3>
-				<p class="caption">Certified Bridge Troll</p>
-			</div>
-
-			<div class="item">
-				<img src="images/Marge.jpeg">
-				<h3 class="name">Virginia May</h3>
-				<p class="caption">Very Soft</p>
-			</div>
-
-			<div class="item">
-				<img src="images/HeidiNorm.jpeg">
-				<h3 class="name">Heidi and Norm</h3>
-				<p class="caption">Chair Sharing</p>
-			</div>
-
-			<div class="item">
-				<img src="images/Norm.jpeg">
-				<h3 class="name">Norman</h3>
-				<p class="caption">Certified Jackass</p>
-			</div>
-
-		</main>
-
-	</section>
-	
-
-	<!-- Engage & Order -->
-	<section class="EngageOrder">
-	<!-- Text inviting customers to contact about custom orders -->
-		<h3>Place an order today!</h3>
-		<p>Head over to our Menu & Ordering page to see our regular items as well as our seasonal bakes! If you don't find what you were looking for, don't worry. We do custom orders!</p>
-
-	</section>
-
-	<!-- Footer -->
-	<footer class="footer">
-        <div class="footer-logo">
-            <!-- Increased logo size in footer -->
-            <img src="images/DAndD.png" alt="Dimples & Dough Logo">
-        </div>
-        <div class="footer-links">
-            <span class="menu-link">Menu</span> <!-- Bold and underlined Menu -->
-            <a href="#home">Home</a>
-            <a href="#menu-order">Menu & Order</a>
-            <a href="#pop-ups">Pop-Ups</a>
-            <a href="#about">About</a>
-        </div>
-        <div class="footer-links">
-            <span class="social-media">Social Media</span> <!-- Bold and underlined Social Media -->
-            <div class="footer-socials">
-                <a href="https://www.instagram.com/dimplesanddough_wa/" target="_blank">
-                    <img src="images/instagramlogo.png" alt="Instagram">
-                </a>
-                <a href="https://www.facebook.com/people/Dimples-Dough/61560367472410/" target="_blank">
-                    <img src="images/facebooklogo.png" alt="Facebook">
-                </a>
-            </div>
-        </div>
-        <div class="footer-links">
-            <span class="contact">Contact</span> <!-- Bold and underlined Contact -->
-            <div class="footer-contact">
-                <p>Email: contact@dimplesanddough.com</p>
-                <p>Tel: (123) 456-7890</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Copyright Section -->
-    <div class="copyright">
-        &copy; 2025 Dimples & Dough. All rights reserved.
-    </div>
+    <!-- JavaScript for dynamic loading -->
+    <script src="scripts.js"></script>
 
 </body>
+
 </html>
