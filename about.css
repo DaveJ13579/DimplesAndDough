@@ -6,11 +6,24 @@
     margin: 50px auto;
     gap: 40px;
     flex-direction: row; /* Ensures image stays left, text stays right */
-
-.about-container {
+{
+	.about-container {
     max-width: 800px; /* Limits width */
     margin: 50px auto; /* Centers the box */
     padding: 20px; /* Adds a little spacing inside */
     text-align: center; /* Centers text */
 }
+.about-image {
+    flex: 1;
+    max-width: 250px; /* Reduces the size of the image */
+}
+
+.about-image img {
+    width: 100%; /* Ensures responsiveness */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
 
