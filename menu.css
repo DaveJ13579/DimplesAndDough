@@ -1,6 +1,6 @@
 /* General Styling */
 main {
-    padding: 20px;
+    padding: 5px;
     text-align: center;
 }
 .menu-container {
@@ -17,7 +17,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    padding: 20px;
+    padding: 10 px;
     flex-wrap: wrap;
 }
 

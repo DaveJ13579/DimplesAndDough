@@ -5,25 +5,41 @@
     max-width: 900px;
     margin: 50px auto;
     gap: 40px;
-    flex-direction: row; /* Ensures image stays left, text stays right */
-{
-	.about-container {
-    max-width: 800px; /* Limits width */
-    margin: 50px auto; /* Centers the box */
-    padding: 20px; /* Adds a little spacing inside */
-    text-align: center; /* Centers text */
+    flex-direction: row; /* Image left, text right */
+    flex-wrap: wrap; /* Allows stacking on small screens */
 }
+
+.about-container {
+    max-width: 600px; /* Keeps text from stretching too wide */
+    padding: 20px;
+    text-align: left;
+}
+
 .about-image {
     flex: 1;
-    max-width: 250px; /* Reduces the size of the image */
+    max-width: 300px; /* Sets an upper limit */
 }
 
 .about-image img {
-    width: 100%; /* Ensures responsiveness */
-    height: auto;
+    width: 100%; /* Makes it responsive */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 400px; /* Prevents excessive height */
     border-radius: 10px;
 }
 
+/* Make the image stack above text on smaller screens */
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stacks image above text */
+        text-align: center;
+    }
 
+    .about-container {
+        max-width: 100%; /* Allows text to expand */
+    }
 
-
+    .about-image {
+        max-width: 250px; /* Keeps image smaller on mobile */
+        margin-bottom: 20px; /* Adds spacing */
+    }
+}

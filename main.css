@@ -24,20 +24,28 @@ a:hover {
 
 /* Global Buttons */
 
-button {
+button,
+.button {  
+    display: inline-block;
     font-size: 1rem;
     padding: 10px 15px;
     border: 2px solid #ff69b4;
     background: transparent;
     color: black;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-align: center;
+    border-radius: 5px;
 }
 
-button:hover {
-    background: #ff69b4;
-    color: white;
+/* Hover Effect - Fully Pink with White Text */
+button:hover,
+.button:hover {
+    background: #ff69b4;  /* Fully pink */
+    color: white;         /* White text */
+    border: 2px solid #ff69b4; /* Keeps border color consistent */
 }
+
 
 /* Global Dividers */
 
