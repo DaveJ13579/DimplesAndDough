@@ -6,3 +6,11 @@
     margin: 50px auto;
     gap: 40px;
     flex-direction: row; /* Ensures image stays left, text stays right */
+
+.about-container {
+    max-width: 800px; /* Limits width */
+    margin: 50px auto; /* Centers the box */
+    padding: 20px; /* Adds a little spacing inside */
+    text-align: center; /* Centers text */
+}
+
