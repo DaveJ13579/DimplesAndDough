@@ -23,7 +23,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -33,7 +33,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     color: #fcf5e5;
 }
@@ -63,7 +63,7 @@ div.item {
     background-color: #ffb2d9;
     position: absolute;
     width: 300px;
-    height: 400px;
+    height: 455px;
     --r: calc(var(--position) - var(--offset));
     --abs: max(calc(var(--r) * -1), var(--r));
     transition: all 0.25s linear;
