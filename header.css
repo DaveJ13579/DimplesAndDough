@@ -36,12 +36,15 @@
 }
 
 .navbar a {
-    font-family: "Montserrat", serif;
-    font-size: 18px;
-    text-transform: uppercase;
     text-decoration: none;
     color:black;
-    margin-right: 25px;
+    margin-right: 43px;
+
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
 }
 
 #hover:hover {
