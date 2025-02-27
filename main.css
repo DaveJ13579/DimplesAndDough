@@ -1,75 +1,115 @@
-/* Global Styles */
+/* main.css */
+
+/* CSS Variables for consistent theming and easy updates */
+
+:root {
+    --primary-color: #ffb2d9; /* Main pink color */
+    --secondary-color: #ff69b4; /* Secondary pink color */
+    --text-color: black; /* Default text color */
+    --font-primary: "Playwrite IT Moderna", cursive; /* Primary font for headings */
+    --font-secondary: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Secondary font for body text */
+    --font-body: 'Montserrat', sans-serif; /* Default body font */
+    --border-radius: 10px; /* Default border radius for buttons, images, etc. */
+    --transition-speed: 0.3s; /* Default transition speed for hover effects */
+}
+
+
+/* Global Styles - Applies to the entire website */
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-body);
     font-size: 16px;
-    color: black;
+    color: var(--text-color);
     background-color: white;
     margin: 0;
     padding: 0;
 }
 
-/* Global Links */
+
+/* Global Links - Styles for all anchor tags */
 
 a {
     text-decoration: none;
     font-weight: bold;
-    color: black;
-    transition: color 0.3s ease;
+    color: var(--text-color);
+    transition: color var(--transition-speed) ease;
 }
 
 a:hover {
-    color: #ff69b4;
+    color: var(--secondary-color); /* Change link color on hover */
 }
 
-/* Global Buttons */
+
+/* Global Buttons - Styles for all buttons and button-like elements */
 
 button,
-.button {  
+.button {
     display: inline-block;
     font-size: 1rem;
     padding: 10px 15px;
-    border: 2px solid #ff69b4;
+    border: 2px solid var(--secondary-color);
     background: transparent;
-    color: black;
+    color: var(--text-color);
     cursor: pointer;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background var(--transition-speed) ease-in-out, color var(--transition-speed) ease-in-out;
     text-align: center;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
+    font-family: var(--font-primary);
 }
 
-/* Hover Effect - Fully Pink with White Text */
 button:hover,
 .button:hover {
-    background: #ff69b4;  /* Fully pink */
-    color: white;         /* White text */
-    border: 2px solid #ff69b4; /* Keeps border color consistent */
+    background: var(--secondary-color);
+    color: white; /* Change button color on hover */
+    border: 2px solid var(--secondary-color);
 }
 
 
-/* Global Dividers */
+/* Global Dividers - Horizontal lines for section separation */
 
 .divider {
     width: 80%;
     margin: 10px auto;
-    border: 1px solid #ff69b4;
+    border: 1px solid var(--secondary-color);
 }
 
-/* Page Structure */
+
+/* Page Structure - Main content area styling */
 
 main {
     padding: 20px;
     text-align: center;
 }
 
-/* Section Headers */
+
+/* Section Headers - Styles for headings (h1, h2, h3) */
 
 h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: black;
+    font-family: var(--font-body);
+    color: var(--text-color);
 }
 
-/* Global Social Media Icons */
+h2 {
+    font-family: var(--font-primary);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    text-align: center;
+}
+
+/* Paragraph Styles - Default styles for paragraphs */
+
+p {
+    font-family: var(--font-body);
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+}
+
+
+/* Global Social Media Icons - Styles for social media icons */
 
 .socials {
     margin-top: 5px;
@@ -77,14 +117,16 @@ h1, h2, h3 {
     float: right;
     height: 40px;
     width: 40px;
+    transition: background-color var(--transition-speed) ease;
 }
 
 .socials:hover {
-    background-color: antiquewhite;
+    background-color: antiquewhite; /* Add hover effect to social icons */
     padding: 5px;
 }
 
-/* Responsive Design */
+
+/* Responsive Design - Media queries for mobile-friendly layouts */
 
 @media (max-width: 768px) {
     .navbar {
@@ -100,4 +142,152 @@ h1, h2, h3 {
         flex-direction: column;
         text-align: center;
     }
+}
+
+
+/* About Section - Styles for the "About" page section */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 50px auto;
+    gap: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-container {
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: var(--border-radius);
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container {
+        max-width: 100%;
+    }
+
+    .about-image {
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Footer Styles - Styles for the website footer */
+
+.footer {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.footer img {
+    height: 200px;
+    width: 200px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-socials img {
+    height: 30px;
+    width: auto;
+}
+
+.footer-contact p {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer-contact p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+
+/* Carousel Styles - Styles for the image carousel */
+
+#Carousel {
+    background-color: white;
+    height: 550px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 500px 0px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.item img {
+    width: 250px;
+    height: 300px;
+    border-radius: var(--border-radius);
+}
+
+.name {
+    margin-bottom: 2px;
+    font-family: var(--font-primary);
+    font-size: 25px;
+    text-align: center;
+}
+
+.caption {
+    font-style: italic;
+    font-family: var(--font-primary);
+    font-size: 20px;
+    text-align: center;
+    color: #fcf5e5;
+}
+
+
+/* Highlight Class - Used for emphasized text */
+/* ================================================== */
+.highlight {
+    color: var(--secondary-color);
 }
