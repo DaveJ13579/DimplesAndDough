@@ -45,9 +45,7 @@
 
 }
 
-.card-list .card-item .card-link:hover {
-	border-color: antiquewhite;
-}
+
 
 .card-list .card-link .card-image {
 	width: 100%;
@@ -78,7 +76,7 @@
 	text-align: center;
 }
 
-.card-list .card-link .card-button {
+/*.card-list .card-link .card-button {
 	height: 35px;
 	width: 35px;
 	color: antiquewhite;
@@ -89,9 +87,6 @@
 	border: 2px solid hotpink;
 	transform: rotate(-45deg);
 	transition: 0.4s ease;
-}
+}*/
 
-.card-list .card-link:hover .card-button {
-	color: #fff;
-	background: antiquewhite;
-}
+
