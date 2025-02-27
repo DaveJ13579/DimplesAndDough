@@ -37,6 +37,10 @@ main {
 }
 
 /* Contact Section */
+.button {
+    background: #ffb2d9;
+}
+
 #contact {
     display: flex;
     align-items: center;
