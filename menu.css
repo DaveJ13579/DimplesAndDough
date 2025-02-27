@@ -36,9 +36,32 @@ main {
     text-align: center;
 }
 
+/* Text Styling */
+h2 {
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    text-align: center;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+}
+
 /* Contact Section */
 .button {
     background: #ffb2d9;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
 }
 
 #contact {
@@ -69,8 +92,9 @@ main {
 }
 
 .contact-form p {
-    font-size: 1rem;
+    font-size: 18px;
     color: #666;
+    text-align: center;
 }
 
 /* Form Styling */
@@ -79,7 +103,8 @@ main {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .contact-form input {
@@ -89,15 +114,21 @@ main {
 .contact-form button {
     background: #ffb2d9;
     border: 2px ff69b4;
-    font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
 }
 
 .contact-form button:hover {
     background: ff69b4;
     color: white;
 }
+
 
 /* Dynamic Textarea */
 #message {
@@ -108,6 +139,8 @@ main {
     background: white;
     font-family: inherit;
     overflow-y: auto;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Form Message */
