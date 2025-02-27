@@ -19,13 +19,22 @@
 
 .name {
     margin-bottom: 2px;
-    color: black;
-    font-family: serif;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
 }
 
 .caption {
     font-style: italic;
-    margin-top: 2px;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
     color: #fcf5e5;
 }
 
