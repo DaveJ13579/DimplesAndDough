@@ -12,7 +12,16 @@
 .about-container {
     max-width: 600px; /* Keeps text from stretching too wide */
     padding: 20px;
-    text-align: left;
+    text-align: left; /* Align text to the left */
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Center items horizontally */
+}
+
+/* Ensure the button has proper spacing and alignment */
+.about-container .button {
+    margin-top: 20px; /* Add space above the button */
+    text-align: center; /* Center the text inside the button */
 }
 
 .about-image {
