@@ -84,6 +84,7 @@ main {
 
 .contact-form button {
     background: transparent;
+    height: 5px;
     border: 2px ff69b4;
     font-weight: bold;
     cursor: pointer;
