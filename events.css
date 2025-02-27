@@ -1,31 +1,8 @@
 
 
 
-.PopupMessage {
-    font-family: "Montserrat", serif;
-    text-align: center;
-    font-weight: normal;
-    text-decoration: underline #ffb2d9;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-/* Text Styling */
-h2 {
-    font-family: "Playwrite IT Moderna", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 35px;
-    text-align: center;
-}
-
-p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 25px;
+.events-container {
+  text-align: center;
 }
 
 /* Contact Section */
