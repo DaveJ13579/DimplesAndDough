@@ -39,12 +39,11 @@ main {
 /* Contact Section */
 #contact {
     display: flex;
-    padding: 5px 10px;
     align-items: center;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    /*padding: 20px;*/
+    padding: 20px;
 }
 
 .contact-image {
@@ -84,7 +83,7 @@ main {
 }
 
 .contact-form button {
-    background: transparent;
+    background: #ffb2d9;
     border: 2px ff69b4;
     font-weight: bold;
     cursor: pointer;
