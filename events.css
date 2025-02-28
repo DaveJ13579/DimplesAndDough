@@ -1,17 +1,18 @@
 
-
-
+/* Events Page Container - Similar to Menu & Order Page */
 .events-container {
-  text-align: Left;
+    max-width: 800px; /* Limits width */
+    margin: 50px auto; /* Centers the container */
+    padding: 20px; /* Adds spacing inside */
+    text-align: center; /* Centers text */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-/* Contact Section */
-.button {
-    background: #ffb2d9;
-    font-family: "Playwrite IT Moderna", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    width: 10;
+/* Button Styling for Events Page */
+.events-container .button {
+    margin-top: 20px; /* Adds space above the button */
+    text-align: center; /* Centers the text inside the button */
+    display: inline-block; /* Ensures the button doesn't stretch */
 }

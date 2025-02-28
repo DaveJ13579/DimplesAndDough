@@ -37,14 +37,6 @@ main {
 }
 
 /* Contact Section */
-.button {
-    background: #ffb2d9;
-    font-family: "Playwrite IT Moderna", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-}
 
 #contact {
     display: flex;
