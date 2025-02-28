@@ -60,13 +60,14 @@ button,
     font-size: 1rem;
     padding: 10px 15px;
     border: 2px solid var(--secondary-color);
-    background: transparent;
+    background: var(--primary-color);
     color: var(--text-color);
     cursor: pointer;
     transition: background var(--transition-speed) ease-in-out, color var(--transition-speed) ease-in-out;
     text-align: center;
     border-radius: var(--border-radius);
     font-family: var(--font-primary);
+    font-weight: normal; /* Ensure font is not bold */
 }
 
 button:hover,
@@ -75,7 +76,6 @@ button:hover,
     color: white; /* Change button color on hover */
     border: 2px solid var(--secondary-color);
 }
-
 
 /* Global Dividers - Horizontal lines for section separation */
 
