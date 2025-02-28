@@ -182,10 +182,9 @@ p {
     max-width: 300px;
 }
 
-.about-image img {
-    width: 100%;
+.about-image img {   
     height: auto;
-    max-height: 500px;
+    max-height: 620px;
     border-radius: var(--border-radius);
 }
 
