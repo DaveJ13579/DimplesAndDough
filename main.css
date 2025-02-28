@@ -81,7 +81,7 @@ button:hover,
 
 .divider {
     width: 80%;
-    margin: 10px auto;
+    margin: 50px auto;
     border: 1px solid var(--secondary-color);
 }
 
