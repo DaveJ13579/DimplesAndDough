@@ -2,7 +2,7 @@ var swiper = new Swiper('.card-wrapper', {
   loop: true,
   spaceBetween: 20,
   slidesPerView: 3,
-  slidesPerGroup: 3,
+  slidesPerGroup: 1,
   loopFillGroupWithBlank: true,
 
   pagination: {
