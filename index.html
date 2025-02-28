@@ -20,15 +20,33 @@
     <!-- Header (Dynamically Loaded) -->
     <div id="header"></div>
 
-    <!-- Page Wide Photo -->
-    <section class="TopImage">
-        <img src="images/Tart for top.jpg" alt="Pies">
-        <div class="motto">Insert Words Here</div>
+    <!-- Rotating Banner Section -->
+    <section class="banner">
+        <div class="slides">
+            <!-- Slide 1 -->
+        <div class="slide active">
+            <img src="images/Banner_CandyChocCake.svg" alt="Banner 1">
+            <div class="overlay"></div>
+            <div class="message">Spreading love & happiness with baked goods</div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+            <img src="images/Banner_Pie.svg" alt="Banner 2">
+            <div class="overlay"></div>
+            <div class="message">Spreading love & happiness with baked goods</div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+            <img src="images/Banner_CarrotCake.svg" alt="Banner 3">
+            <div class="overlay"></div>
+            <div class="message">Spreading love & happiness with baked goods</div>
+        </div>
+    </div>
     </section>
 
     <hr class="divider">
 
-     <!-- Welcome Message -->
+    <!-- Welcome Message -->
     <section class="welcome-message">
         <div class="welcome-container"> 
             <h2 class="message">Small-batches, big heart</h2>
@@ -44,23 +62,20 @@
             <p><em>Have a custom request?</em></p>
             <br><br>
             <a href="menu.html#contact" class="button">Let's Create Something!</a>
-        </section>
+        </div>
+    </section>
 
     <hr class="divider">
 
-        <!-- Image Carousel (Dynamically Loaded) -->
-       <iframe src="carousel/GoodCarousel" width="100%" height="500px" scrolling="no" seamless="seamless" style="border:none;">
-</iframe> 
-    </section>
-
-    
+    <!-- Image Carousel (Dynamically Loaded) -->
+    <iframe src="carousel/GoodCarousel" width="100%" height="500px" scrolling="no" seamless="seamless" style="border:none;">
+    </iframe>
 
     <!-- Footer (Dynamically Loaded) -->
     <div id="footer"></div>
 
     <!-- JavaScript for dynamic loading -->
     <script src="scripts.js"></script>
-
 </body>
 
 </html>
