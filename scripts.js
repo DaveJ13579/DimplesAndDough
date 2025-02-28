@@ -37,13 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
         initializeBanner();
     }
 });
+let slideInterval;
+let isPaused = false;
 
-// Auto-rotating banner script
 function initializeBanner() {
     let currentSlide = 0;
     let slides = document.querySelectorAll('.slide');
     let dots = document.querySelectorAll('.dot');
-    let interval = 5000; // Time between slides (in milliseconds)
 
     // Function to show a specific slide
     function showSlide(index) {
@@ -58,8 +58,10 @@ function initializeBanner() {
 
     // Function to go to the next slide
     function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
+        if (!isPaused) {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
     }
 
     // Function to go to a specific slide
@@ -68,20 +70,47 @@ function initializeBanner() {
         showSlide(currentSlide);
     }
 
+    // Function to move slides with arrows
+    function moveSlide(direction) {
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    // Function to toggle pause/play
+    function togglePause() {
+        isPaused = !isPaused;
+        const pauseButton = document.querySelector('.pause-button');
+        if (isPaused) {
+            clearInterval(slideInterval);
+            pauseButton.innerHTML = '<img src="images/play-icon.svg" alt="Play">';
+        } else {
+            slideInterval = setInterval(nextSlide, 5000);
+            pauseButton.innerHTML = '<img src="images/pause-icon.svg" alt="Pause">';
+        }
+    }
+
     // Start auto-rotation
-    let slideInterval = setInterval(nextSlide, interval);
+    slideInterval = setInterval(nextSlide, 5000);
 
     // Pause auto-rotation on hover
     let banner = document.querySelector('.banner');
     if (banner) {
         banner.addEventListener('mouseenter', () => clearInterval(slideInterval));
         banner.addEventListener('mouseleave', () => {
-            slideInterval = setInterval(nextSlide, interval);
+            if (!isPaused) {
+                slideInterval = setInterval(nextSlide, 5000);
+            }
         });
     }
 
     // Show the first slide initially
     showSlide(currentSlide);
+
+    // Add event listener for pause button
+    const pauseButton = document.querySelector('.pause-button');
+    if (pauseButton) {
+        pauseButton.addEventListener('click', togglePause);
+    }
 }
 
 // Carousel functionality
