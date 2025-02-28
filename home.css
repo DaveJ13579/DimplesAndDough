@@ -8,8 +8,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
-	margin-bottom: 20px;
-	max-height: 400px;
+	width: 100%;
+	max-height: 350px;
 }
 .welcome-container {
     max-width: 800px; /* Controls text width */
