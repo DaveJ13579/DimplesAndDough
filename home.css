@@ -1,9 +1,7 @@
 /*Top Image*/
 
 .TopImage {
-	position: relative;
-	border-bottom: 4px solid #ffb2d9;
-	
+	position: relative;	
 }
 .TopImage img {
 	display: block;
