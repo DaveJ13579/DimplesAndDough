@@ -4,7 +4,7 @@
     max-width: 800px; /* Limits width */
     margin: 50px auto; /* Centers the container */
     padding: 20px; /* Adds spacing inside */
-    text-align: center; /* Centers text */
+    text-align: left; /* Centers text */
 }
 
 /* Button Styling for Events Page */
