@@ -49,19 +49,6 @@ body {
   
 }
 
-.button {
-  background: #ffb2d9;
-  padding: 10px 10px;
-  width: 30%;
-  background: #ffb2d9;
-  font-family: "Playwrite IT Moderna", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-}
-
-
 .cellOne {
   flex: 50%;  
   margin: 30px;
