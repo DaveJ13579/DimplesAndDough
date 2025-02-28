@@ -8,24 +8,24 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.text())
         .then(data => document.getElementById("footer").innerHTML = data);
 
-    if (document.getElementById("carousel")) {
+    // Load carousel if the placeholder exists
+    const carouselPlaceholder = document.getElementById("carousel");
+    if (carouselPlaceholder) {
         fetch("carousel.html")
             .then(response => response.text())
-            .then(data => document.getElementById("carousel").innerHTML = data);
+            .then(data => carouselPlaceholder.innerHTML = data);
     }
 
-    // Menu page interactivity (if needed) 
+    // Add page-specific scripts if needed
     if (document.body.classList.contains("menu-page")) {
-        // Add menu-specific scripts here (if needed)
+        // Add menu-specific scripts here
     }
 
-    // Events page interactivity (if needed)
     if (document.body.classList.contains("events-page")) {
-        // Add event-specific scripts here (if needed)
+        // Add event-specific scripts here
     }
 
-    // About page interactivity (if needed)
     if (document.body.classList.contains("about-page")) {
-        // Add about-specific scripts here (if needed)
+        // Add about-specific scripts here
     }
 });
