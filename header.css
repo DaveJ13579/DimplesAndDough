@@ -5,6 +5,7 @@
   background: var(--primary-color); /* Uses the primary color for the background */
   margin: 0; /* Removes default margin */
   padding: 0; /* Removes default padding */
+  padding-right: 20px; /* moves icons away from the right edge */
 }
 
 /* Social Icons: Styles for social media icons in the header */
