@@ -97,6 +97,8 @@
     display: flex; /* Uses Flexbox for layout */
     flex-direction: column; /* Stacks form elements vertically */
     text-align: left; /* Aligns text to the left */
+    max-width: 600px; /* Constrains the form container width */
+    margin: 0; /* removes extra margin */
 }
 
 /* Center the h2 heading in the contact form */
@@ -104,6 +106,10 @@
     text-align: center /* Centers the heading */
     margin-bottom: 10px;
 
+}
+/* Space between the <p> and the first textbox */
+.contact-form p {
+    margin-bottom: 1rem; /* 1 line of space
 }
 
 /* Form Fields: Styles for input fields and textarea */
@@ -120,9 +126,16 @@
     margin: 0; /* Removes default margin */
     font-family: var(--font-body); /* Uses Montserrat for form text */
     font-size: 16px; /* Sets the font size */
-    padding: 5px; /* Adds padding */
+    padding: 10px; /* Adds padding */
     border: 1px solid #ccc; /* Adds a light border */
     border-radius: 5px; /* Rounded corners */
+    max-width: 600px; /* 600px ensures it does not exceed container width */
+
+}
+/* BUTTON: Left-align and reduce top margin if needed */
+.contact-form form button[type="submit"] {
+  align-self: flex-start;    /* Ensures the button is left-aligned */
+  margin-top: 5px;           /* Small space above button */
 }
 
 /* Thank-You Message: Hidden by default and displayed after form submission */
