@@ -1,95 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dimples & Dough | Menu</title>
 
     <!-- Global and Page-Specific CSS -->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"> <!-- Global styles for the entire site -->
+    <link rel="stylesheet" href="menu.css"> <!-- Specific styles for the menu page -->
 </head>
+<body class="menu-page"> 
 
-<body class="menu-page"> <!-- Added class for JavaScript targeting -->
-
-    <!-- Header (Dynamically Loaded) -->
+    <!-- Header (Dynamically Loaded): Header content will be inserted here -->
     <div id="header"></div>
 
     <main>
-        <!-- Introduction Section -->
-        <section class="intro">
-             <div class="menu-container">
-            <div>
-                <h2>Welcome to Dimples & Dough</h2><br>
-                <p>Every bake from Dimples & Dough is crafted in small batches with care, creativity, and a whole lot of love. 
-                    While we don’t have set prices, each order is customized to fit your vision 
-                    - whether it’s a signature favorite or a seasonal treat.<br><br>
-                    Browse our staple bakes and seasonal offerings, then reach out to collaborate on something special. We’d love to bring your sweet ideas to life! Let’s start crafting your custom order today.</p><br><br>
-                    <div>
-                        <a href="#contact" class="button">Contact Us</a>
-                    </div>
-
+        <!-- Introduction Section: Introduces the menu and invites users to explore -->
+        <section class="menu-intro">
+            <!-- Left Image: Decorative image on the left -->
+            <img src="images/Menu_Pies1.png" alt="Intro Left Image" class="side-image">
+            <!-- Text Content: Describes the menu and includes a call-to-action button -->
+            <div class="menu-text">
+                <h2>Sweet, Savory, and <br> Oh So Crave-Worthy!</h2>
+                <p>
+                    Every bake from Dimples & Dough is made with care, creativity, and a whole lot of love.
+                    With no set prices, each order is customized just for you—whether it’s a signature favorite or a seasonal treat.
+                    <br><br>
+                    Browse our offerings and let’s create something special together!
+                </p>
+                <!-- Call-to-Action Button: Links to the contact form -->
+                <div class="button-container">
+                    <a href="#contact" class="button">Order Now</a>
+                </div>
+            </div>
+            <!-- Right Image: Decorative image on the right -->
+            <img src="images/Menu_Pies2.png" alt="Intro Right Image" class="side-image">
         </section>
 
+        <!-- Horizontal Divider: Matches the style of other pages -->
         <hr class="divider">
 
-        <!-- Staples Section -->
-<section id="staples">
-    <h2>Staples – Always Available</h2>
-    <div class="menu-items">
-        <p><strong>Classic Cookies:</strong> Chocolate Chip, Brown Butter Snickerdoodle, Oatmeal Raisin</p><br>
-        <p><strong>Chewy Brownies & Blondies:</strong> Fudgy Brownies, Espresso Brownies, White Chocolate Blondies</p><br>
-        <p><strong>Cinnamon Rolls:</strong> Soft, gooey, and topped with vanilla bean icing</p><br>
-        <p><strong>Banana Bread:</strong> Moist and flavorful, with or without nuts</p><br>
-        <p><strong>Shortbread & Butter Cookies:</strong> Buttery, crisp, and melt-in-your-mouth</p><br>
-    </div>
-</section>
+        <!-- Staples Section: Lists always-available menu items -->
+        <section id="staples">
+            <h2>Staples – Always Available</h2>
+            <div class="menu-layout">
+                <!-- Left Image: Decorative image on the left -->
+                <img src="images/Menu_Croissant.png" alt="Left Image" class="menu-side-image">
 
-<!-- Seasonal Specials Section -->
-<section id="seasonal">
-    <h2>Seasonal Offerings – Limited Time!</h2>
-    <div class="menu-items">
-        <p><strong>Spring:</strong> Lemon Poppyseed Muffins, Strawberry Shortcake Bars</p><br>
-        <p><strong>Summer:</strong> Peach Cobbler Cookies, S’mores Brownies</p><br>
-        <p><strong>Fall:</strong> Pumpkin Spice Loaf, Apple Cider Donuts</p><br>
-        <p><strong>Winter:</strong> Hot Cocoa Cookies, Peppermint Bark Brownies</p>
-    </div>
-</section>
+                <!-- Menu Items: Lists staple baked goods -->
+                <div class="menu-items">
+                    <p><strong>Classic Cookies:</strong> Chocolate Chip, Brown Butter Snickerdoodle, Oatmeal Raisin</p><br>
+                    <p><strong>Chewy Brownies & Blondies:</strong> Fudgy Brownies, Espresso Brownies, White Chocolate Blondies</p><br>
+                    <p><strong>Cinnamon Rolls:</strong> Soft, gooey, and topped with vanilla bean icing</p><br>
+                    <p><strong>Banana Bread:</strong> Moist and flavorful, with or without nuts</p><br>
+                    <p><strong>Shortbread & Butter Cookies:</strong> Buttery, crisp, and melt-in-your-mouth</p><br>
+                </div>
 
-<hr class="divider">
+                <!-- Right Image: Decorative image on the right -->
+                <img src="images/Menu_RaspberryCake.png" alt="Right Image" class="menu-side-image">
+            </div>
+        </section>
 
-<!-- Contact Section -->
-<section id="contact">
-    <img src="images/bakedgoodcounter.jpg" alt="Cookie Batter" class="contact-image">
-    <div class="contact-form">
-        <h2>Don’t see what you’re craving?</h2><br>
-        <p>Let’s create something delicious together! <br> 
-            Whether you have a vision or need ideas, <br>
-            I’m here to help. Let’s create something delicious!</p>
-        <form id="contact">
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-            <button type="submit">Send Inquiry</button>
-            <p id="form-message" class="hidden">Thank you! Your message has been submitted.</p>
-        </form>
-    </div>
-</section>
+        <!-- Horizontal Divider: Matches the style of other pages -->
+        <hr class="divider">
 
-    <hr class="divider">
+        <!-- Seasonal Specials Section: Lists limited-time seasonal offerings -->
+        <section id="seasonal">
+            <h2>Seasonal Offerings – Limited Time!</h2>
+            <div class="menu-layout">
+                <!-- Left Image: Decorative image on the left -->
+                <img src="images/Menu_TartFruit.png" alt="Left Image" class="menu-side-image">
 
-    <!-- Carousel (Dynamically Loaded) -->
-    <iframe src="carousel/GoodCarousel" width="100%" height="500px" scrolling="no" seamless="seamless" style="border:none;">
-</iframe> 
-    <!-- Footer (Dynamically Loaded) -->
+                <!-- Menu Items: Lists seasonal baked goods -->
+                <div class="menu-items">
+                    <p><strong>Spring:</strong> Lemon Poppyseed Muffins, Strawberry Shortcake Bars</p><br>
+                    <p><strong>Summer:</strong> Peach Cobbler Cookies, S’mores Brownies</p><br>
+                    <p><strong>Fall:</strong> Pumpkin Spice Loaf, Apple Cider Donuts</p><br>
+                    <p><strong>Winter:</strong> Hot Cocoa Cookies, Peppermint Bark Brownies</p><br>
+                </div>
+
+                <!-- Right Image: Decorative image on the right -->
+                <img src="images/Menu_Tart.png" alt="Right Image" class="menu-side-image">
+            </div>
+        </section>
+
+        <!-- Horizontal Divider: Matches the style of other pages -->
+        <hr class="divider">
+
+        <!-- Contact Section: Allows users to submit custom requests -->
+        <section id="contact">
+            <!-- Contact Image: Decorative image on the left -->
+            <img src="images/bakedgoodcounter.jpg" alt="Cookie Batter" class="contact-image">
+            <!-- Contact Form: Form for users to submit inquiries -->
+            <div class="contact-form">
+                <h2>Don’t see what you’re craving?</h2>
+                <p>Let’s create something delicious together! Whether you have a vision or need ideas, I’m here to help.</p>
+                <form id="contact">
+                    <!-- Email Input: Field for the user's email -->
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <!-- Message Textarea: Field for the user's message -->
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    <!-- Submit Button: Submits the form -->
+                    <button type="submit">Send Inquiry</button>
+                    <!-- Thank-You Message: Displayed after form submission -->
+                    <p id="form-message" class="hidden">Thank you! Your message has been submitted.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Horizontal Divider: Matches the style of other pages -->
+        <hr class="divider">
+
+        <!-- Carousel (Dynamically Loaded): Embedded carousel for showcasing content -->
+        <iframe src="carousel/GoodCarousel"
+                width="100%" 
+                height="500px" 
+                scrolling="no" 
+                seamless="seamless" 
+                style="border:none;">
+        </iframe>
+    </main>
+
+    <!-- Footer (Dynamically Loaded): Footer content will be inserted here -->
     <div id="footer"></div>
 
-    <!-- JavaScript for dynamic loading and interactivity -->
-    <script src="scripts.js"></script>
-
+    <!-- JavaScript: Dynamically loads the header and footer -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            Promise.all([
+                fetch("header.html").then(response => response.text()),
+                fetch("footer.html").then(response => response.text())
+            ]).then(([header, footer]) => {
+                document.getElementById("header").innerHTML = header;
+                document.getElementById("footer").innerHTML = footer;
+            }).catch(error => console.error("Error loading header/footer:", error));
+        });
+    </script>
 </body>
-
 </html>
