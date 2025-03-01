@@ -103,7 +103,7 @@
 
 /* Center the h2 heading in the contact form */
 .contact-form h2 {
-    text-align: center /* Centers the heading */
+    text-align: center; /* Centers the heading */
     margin-bottom: 10px;
 
 }
