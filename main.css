@@ -96,20 +96,21 @@ main {
 
 /* Section Headers - Styles for headings (h1, h2, h3) */
 
+/* Section Headers - Styles for headings (h1, h2, h3) */
 h1, h2, h3 {
     font-family: var(--font-body);
-    color: var(--text-color);
+    color: var(--secondary-color); /* Updated to use secondary color */
 }
 
 h2 {
     font-family: var(--font-primary);
     font-optical-sizing: auto;
     font-weight: 400;
-    font-color: var(--secondary-color);
     font-style: normal;
     font-size: 35px;
     text-align: center;
     margin-bottom: 20px; /* add space below the h2 */
+    color: var(--secondary-color); /* Ensure h2 uses secondary color */
 }
 
 /* Paragraph Styles - Default styles for paragraphs */
