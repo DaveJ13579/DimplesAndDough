@@ -1,107 +1,151 @@
-/* General Styling */
-main {
-    padding: 5px;
-    text-align: center;
-}
-.menu-container {
-    max-width: 800px; /* Limits width */
-    margin: 50px auto; /* Centers the box */
-    padding: 20px; /* Adds spacing inside */
-    text-align: left; /* Centers text */
-}
-
-
-/* Introduction Section */
-.intro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 10 px;
-    flex-wrap: wrap;
+/* Introduction Section: Styles for the menu introduction section */
+.menu-intro {
+    display: flex; /* Uses Flexbox for layout */
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+    gap: 40px; /* Adds space between text and image */
+    max-width: 1200px; /* Limits the maximum width of the container */
+    margin: 50px auto; /* Centers the container horizontally with top/bottom margin */
+    padding: 20px; /* Adds internal padding */
 }
 
-.intro-image {
-    width: 150px;
-    height: auto;
-    max-width: 100%;
+/* Intro Text Area: Styles for the text content */
+.menu-text {
+    flex: 1; /* Takes up remaining space */
+    text-align: left; /* Aligns text to the left */
 }
 
-
-/* Staples & Seasonal Sections */
-#staples,
-#seasonal {
-    margin: 40px auto;
-    max-width: 800px;
-    text-align: left;
+/* Center the h2 heading in the intro section */
+.menu-intro h2 {
+    text-align: center; /* Centers the heading */
 }
 
-/* Contact Section */
+/* Left-align paragraphs in the intro section */
+.menu-intro p {
+    text-align: left; /* Aligns text to the left */
+}
 
+/* Side Image: Styles for the image in the intro section */
+.side-image {
+    margin: 0 20px; /* Adds space around the image */
+    width: 200px; /* Fixed width for the image */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: var(--border-radius); /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Menu Layout: Styles for the menu sections (Staples, Seasonal, etc.) */
+.menu-layout {
+    display: flex; /* Uses Flexbox for layout */
+    align-items: center; /* Vertically centers content */
+    justify-content: space-between; /* Spaces items evenly */
+    gap: 40px; /* Adds space between text and image */
+    max-width: 1200px; /* Limits the maximum width of the container */
+    margin: 20px auto; /* Centers the container horizontally with top/bottom margin */
+    padding: 20px; /* Adds internal padding */
+}
+
+/* Center the h2 heading in the menu layout */
+.menu-layout h2 {
+    text-align: center; /* Centers the heading */
+}
+
+/* Left-align paragraphs in the menu layout */
+.menu-layout p {
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Section Text Area: Styles for the text content in menu sections */
+.menu-items {
+    flex: 1; /* Takes up remaining space */
+    text-align: left; /* Aligns text to the left */
+    margin-bottom: 8px; /* Adds space below the text */
+}
+
+/* Side Image in Menu Layout: Styles for the image in menu sections */
+.menu-side-image {
+    margin: 0 20px; /* Adds space around the image */
+    width: 200px; /* Fixed width for the image */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: var(--border-radius); /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Contact Section: Styles for the contact section (Image + Form) */
 #contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    padding: 20px;
+    display: flex; /* Uses Flexbox for layout */
+    align-items: stretch; /* Ensures image and form stretch to the same height */
+    gap: 40px; /* Adds space between image and form */
+    max-width: 1200px; /* Limits the maximum width of the container */
+    margin: 50px auto; /* Centers the container horizontally with top/bottom margin */
+    padding: 20px; /* Adds internal padding */
 }
 
+/* Contact Image: Styles for the image in the contact section */
 .contact-image {
-    width: 45%;
-    max-width: 600px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+    flex: 0 0 50%; /* Takes up exactly half the container width */
+    width: 100%; /* Ensures the image fills its flex area horizontally */
+    height: 100%; /* Ensures the image fills the container’s height */
+    object-fit: cover; /* Ensures the image fills the box, cropping if needed */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
+/* Contact Form: Styles for the form in the contact section */
 .contact-form {
-    width: 50%;
-    max-width: 400px;
-    text-align: left;
+    flex: 1; /* Takes up remaining space */
+    display: flex; /* Uses Flexbox for layout */
+    flex-direction: column; /* Stacks form elements vertically */
+    justify-content: center; /* Centers form content vertically */
+    text-align: left; /* Aligns text to the left */
 }
 
+/* Center the h2 heading in the contact form */
 .contact-form h2 {
-    font-size: 1.5rem;
-    color: #333;
+    text-align: center; /* Centers the heading */
 }
 
-.contact-form p {
-    font-size: 18px;
-    color: #666;
-    text-align: center;
+/* Form Fields: Styles for input fields and textarea */
+.contact-form form {
+    display: flex; /* Uses Flexbox for layout */
+    flex-direction: column; /* Stacks form elements vertically */
+    gap: 10px; /* Adds space between form elements */
 }
 
-/* Form Styling */
-.contact-form input,
-.contact-form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 15px;
-    font-family: var(--font-body);
+.contact-form form input[type="email"],
+.contact-form form textarea {
+    width: 100%; /* Ensures inputs and textarea take full width */
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+    margin: 0; /* Removes default margin */
+    font-family: var(--font-body); /* Uses Montserrat for form text */
+    font-size: 16px; /* Sets the font size */
+    padding: 8px; /* Adds padding */
+    border: 1px solid #ccc; /* Adds a light border */
+    border-radius: 5px; /* Rounded corners */
 }
 
-.contact-form input {
-    border: 1px solid #ccc;
-
+/* Thank-You Message: Hidden by default and displayed after form submission */
+#form-message {
+    display: none; /* Hidden by default */
+    font-style: italic; /* Italic text */
+    color: green; /* Green text color */
+    text-align: center; /* Centers the message */
+    margin-top: 10px; /* Adds space above the message */
 }
 
+/* Responsive Design: Adjusts layout for screens smaller than 768px */
+@media (max-width: 768px) {
+    #contact {
+        flex-direction: column; /* Stacks image and form vertically */
+        text-align: center; /* Centers text horizontally */
+    }
 
+    .contact-image {
+        max-width: 90%; /* Limits the image width for smaller screens */
+        margin-bottom: 20px; /* Adds space below the image */
+    }
 
-/* Dynamic Textarea */
-#message {
-    width: 100%;
-    min-height: 40px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background: white;
-    font-family: inherit;
-    overflow-y: auto;
-    font-size: 15px;
-    font-family: var(--font-body);
-
-/* Form Message */
-.hidden {
-    display: none;
+    .contact-form {
+        text-align: center; /* Centers form content horizontally */
+    }
 }
