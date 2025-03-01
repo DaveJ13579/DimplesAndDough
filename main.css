@@ -1,7 +1,6 @@
-/* main.css */
+/* Global CSS for Dimples & Dough */
 
-/* CSS Variables for consistent theming and easy updates */
-
+/* CSS Variables for Consistency */
 :root {
     --primary-color: #ffb2d9; /* Main pink color */
     --secondary-color: #ff69b4; /* Secondary pink color */
@@ -13,21 +12,19 @@
     --transition-speed: 0.3s; /* Default transition speed for hover effects */
 }
 
-/* Global Reset - Remove default browser styles */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure padding and border are included in element dimensions */
+    box-sizing: border-box;
 }
 
 body, html {
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
 }
-/* Global Styles - Applies to the entire website */
 
+/* Global Body Styles */
 body {
     font-family: var(--font-body);
     font-size: 14px;
@@ -37,9 +34,7 @@ body {
     padding: 0;
 }
 
-
-/* Global Links - Styles for all anchor tags */
-
+/* Global Links */
 a {
     text-decoration: none;
     font-weight: bold;
@@ -48,12 +43,10 @@ a {
 }
 
 a:hover {
-    color: var(--secondary-color); /* Change link color on hover */
+    color: var(--secondary-color);
 }
 
-
-/* Global Buttons - Styles for all buttons and button-like elements */
-
+/* Global Buttons */
 button,
 .button {
     display: inline-block;
@@ -67,36 +60,30 @@ button,
     text-align: center;
     border-radius: var(--border-radius);
     font-family: var(--font-primary);
-    font-weight: normal; /* Ensure font is not bold */
+    font-weight: normal;
 }
 
 button:hover,
 .button:hover {
     background: var(--secondary-color);
-    color: white; /* Change button color on hover */
+    color: white;
     border: 2px solid var(--secondary-color);
 }
 
-/* Global Dividers - Horizontal lines for section separation */
-
+/* Global Dividers */
 .divider {
     width: 80%;
     margin: 50px auto;
     border: 1px solid var(--secondary-color);
 }
 
-
-/* Page Structure - Main content area styling */
-
+/* Page Structure */
 main {
     padding: 20px;
     text-align: center;
 }
 
-
-/* Section Headers - Styles for headings (h1, h2, h3) */
-
-/* Section Headers - Styles for headings (h1, h2, h3) */
+/* Section Headers */
 h1, h2, h3 {
     font-family: var(--font-body);
     color: var(--secondary-color); /* Updated to use secondary color */
@@ -113,8 +100,7 @@ h2 {
     color: var(--secondary-color); /* Ensure h2 uses secondary color */
 }
 
-/* Paragraph Styles - Default styles for paragraphs */
-
+/* Paragraph Styles */
 p {
     font-family: var(--font-body);
     font-optical-sizing: auto;
@@ -123,9 +109,7 @@ p {
     font-size: 20px;
 }
 
-
-/* Global Social Media Icons - Styles for social media icons */
-
+/* Social Media Icons */
 .socials {
     margin-top: 5px;
     margin-right: 5px;
@@ -136,13 +120,11 @@ p {
 }
 
 .socials:hover {
-    background-color: antiquewhite; /* Add hover effect to social icons */
+    background-color: antiquewhite;
     padding: 5px;
 }
 
-
-/* Responsive Design - Media queries for mobile-friendly layouts */
-
+/* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -159,9 +141,7 @@ p {
     }
 }
 
-
-/* About Section - Styles for the "About" page section */
-
+/* About Section */
 .about {
     display: flex;
     align-items: center;
@@ -190,6 +170,7 @@ p {
     border-radius: var(--border-radius);
 }
 
+/* Responsive About Section */
 @media screen and (max-width: 768px) {
     .about {
         flex-direction: column;
@@ -206,9 +187,7 @@ p {
     }
 }
 
-
-/* Footer Styles - Styles for the website footer */
-
+/* Footer */
 .footer {
     background-color: var(--primary-color);
     display: flex;
@@ -264,9 +243,7 @@ p {
     color: var(--text-color);
 }
 
-
-/* Carousel Styles - Styles for the image carousel */
-
+/* Carousel Section */
 #Carousel {
     background-color: white;
     height: 550px;
@@ -298,14 +275,88 @@ p {
     text-align: center;
     color: #fcf5e5;
 }
+
+/* Logo */
 .logo {
     display: block;
-    margin: 20px auto 25px; /* Add 20px margin-top, 0 margin-left/right, 25px margin-bottom */
+    margin: 20px auto 25px;
     height: 250px;
     width: 250px;
 }
 
-/* Highlight Class - Used for emphasized text */
+/* Highlight Class */
 .highlight {
     color: var(--secondary-color);
+}
+
+/* General Styling */
+main {
+    padding: 5px;
+    text-align: center;
+}
+
+/* Contact Section */
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.contact-image {
+    width: 45%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contact-form {
+    width: 50%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.contact-form p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}
+
+/* Form Inputs */
+.contact-form input,
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: var(--font-body);
+}
+
+.contact-form input {
+    border: 1px solid #ccc;
+}
+
+/* Dynamic Textarea */
+#message {
+    width: 100%;
+    min-height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: white;
+    font-family: inherit;
+    overflow-y: auto;
+    font-size: 15px;
+}
+
+/* Hidden Form Message */
+.hidden {
+    display: none;
 }
