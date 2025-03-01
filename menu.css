@@ -76,7 +76,7 @@
     display: flex; /* Uses Flexbox for layout */
     align-items: stretch; /* Ensures image and form stretch to the same height */
     gap: 40px; /* Adds space between image and form */
-    max-width: 1000px; /* Limits the maximum width of the container */
+    max-width: 1200px; /* Limits the maximum width of the container */
     margin: 50px auto; /* Centers the container horizontally with top/bottom margin */
     padding: 20px; /* Adds internal padding */
 }
@@ -96,13 +96,14 @@
     flex: 1; /* Takes up remaining space */
     display: flex; /* Uses Flexbox for layout */
     flex-direction: column; /* Stacks form elements vertically */
-    justify-content: left; /* Centers form content vertically */
     text-align: left; /* Aligns text to the left */
 }
 
 /* Center the h2 heading in the contact form */
 .contact-form h2 {
-    text-align: center; /* Centers the heading */
+    text-align: center /* Centers the heading */
+    margin-bottom: 10px;
+
 }
 
 /* Form Fields: Styles for input fields and textarea */
@@ -119,7 +120,7 @@
     margin: 0; /* Removes default margin */
     font-family: var(--font-body); /* Uses Montserrat for form text */
     font-size: 16px; /* Sets the font size */
-    padding: 8px; /* Adds padding */
+    padding: 5px; /* Adds padding */
     border: 1px solid #ccc; /* Adds a light border */
     border-radius: 5px; /* Rounded corners */
 }
@@ -135,6 +136,29 @@
 
 /* Responsive Design: Adjusts layout for screens smaller than 768px */
 @media (max-width: 768px) {
+
+        /* Introduction Section: Switches layout to column so images stack above and below the text */
+    .menu-intro {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Menu Sections (Staples, Seasonal, etc.): Switches layout to column for images above/below text */
+    .menu-layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Side Images: Adjusts width and centers them for mobile */
+    .side-image,
+    .menu-side-image {
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
     #contact {
         flex-direction: column; /* Stacks image and form vertically */
         text-align: center; /* Centers text horizontally */

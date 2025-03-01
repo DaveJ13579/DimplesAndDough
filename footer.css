@@ -92,3 +92,30 @@
     margin-top: 20px; /* Adds space above the text */
     color: black; /* Sets the text color */
 }
+
+/* Responsive Design: Adjusts the footer layout for screens smaller than 768px */
+@media (max-width: 768px) {
+    /* Footer Container: Stacks footer sections vertically and centers them */
+    .footer {
+        flex-direction: column;    /* Changes from row to column layout */
+        align-items: center;       /* Centers items horizontally */
+        justify-content: center;   /* Centers items vertically if there's extra space */
+        text-align: center;        /* Centers text in each footer section */
+    }
+
+    /* Footer Logo: Adds spacing below the logo for separation on mobile */
+    .footer-logo {
+        margin-bottom: 20px;       /* Adjust spacing as needed */
+    }
+
+    /* Footer Links: Stacks link columns and centers them */
+    .footer-links {
+        margin-bottom: 20px;       /* Adds space below each links section */
+        align-items: center;       /* Centers links horizontally */
+    }
+
+    /* Social Icons: Ensures icons are centered in their container */
+    .footer-socials {
+        justify-content: center;   /* Centers the social media icons */
+    }
+}

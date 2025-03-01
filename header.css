@@ -70,3 +70,34 @@
   border: 2px solid; /* Sets the border thickness */
   color: var(--primary-color); /* Uses the primary color for the line */
 }
+
+/* Responsive Design: Adjusts the header layout for screens smaller than 768px */
+@media (max-width: 768px) {
+    /* Header Bar: Allows it to grow with content and centers items */
+    .header-header {
+        height: auto; /* Allows the header height to adjust */
+        display: flex; /* Switches to Flexbox layout */
+        flex-direction: column; /* Stacks elements vertically */
+        align-items: center; /* Centers items horizontally */
+        justify-content: center; /* Centers items vertically if extra space */
+        padding: 10px; /* Adds some padding for spacing */
+    }
+
+    /* Social Icons: Resets float and margins for mobile screens */
+    .socials {
+        float: none; /* Removes float to avoid alignment issues */
+        margin: 0 5px; /* Adjust spacing around the icons */
+    }
+
+    /* Logo: Scales down for smaller screens and re-centers */
+    .logo {
+        width: 180px; /* Adjust to desired size */
+        margin: 20px auto; /* Adds space around the logo */
+    }
+
+    /* Navigation Links: Stacks links vertically for easier tapping */
+    .navbar a {
+        display: block; /* Places each link on its own line */
+        margin: 5px 0;  /* Adds vertical spacing between links */
+    }
+}
